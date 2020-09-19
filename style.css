@@ -1,0 +1,122 @@
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Quicksand", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: colum;
+            flex-wrap: nowrap;
+        }
+        
+        .header {
+            height: 100hv;
+            background-size: cover;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            outline: 1px solid white;
+            width: 75%;
+            margin: 10px auto;
+            color: blue;
+        }
+        
+        .header-logo {
+            outline: 1px solid white;
+            flex: 1;
+            display: flex;
+            transition: opacity 2s;
+        }
+        
+        .header-logo img {
+            list-style: none;
+            outline: 1px solid white;
+            font-family: "Quicksand", sans-serif;
+            color: black;
+            display: block;
+        }
+        
+        .header-menu {
+            flex: 1;
+            outline: 1px solid white;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .header-menu li {
+            list-style: none;
+            margin: 30px;
+            font-size: 19px;
+            outline: 1px solid white;
+            text-align: center;
+            font-weight: bold;
+            float: left;
+            margin-right: 15px;
+        }
+        
+        .header-menu li a:link,
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .header-menu li a:hover {
+            color: f5620c;
+        }
+        
+        .header-content {
+            outline: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 5vh;
+            background: #9cd3f71e;
+        }
+        
+        .header-content h1 {
+            font-size: 50px;
+            color: #1b1919;
+            font-weight: 900;
+            font-family: sans-serif;
+        }
+        
+        .header-content h3 {
+            font-size: 18px;
+            color: #0e0707;
+            font-weight: 500;
+            margin-top: 0 auto;
+            font-family: Oxygen, Arial;
+        }
+        
+        .comunidade {
+            width: 180px;
+            height: 50px;
+            margin: 25px auto;
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+            background-color: rgb(2, 28, 51);
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 200px;
+            padding: 0px 0px;
+            font-weight: bold;
+        }
+        
+        .comunidade:hover {
+            background-color: #f5620c;
+            color: white;
+        }
+        
+        .comunidade:link {
+            text-decoration: none;
+        }
+        
+        .comunidade p {
+            color: white;
+        }
