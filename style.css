@@ -1,31 +1,37 @@
-        * {
+/* CSS Reset*/
+       
+       * {
             padding: 0;
             margin: 0;
             font-family: "Quicksand", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        
+
+
+/* Nav*/
+    nav {
+        display: flex;
+        justify-content: space-around;
+        outline: 1px solid white;
+        width: 75%;
+        margin: 10px auto;
+        color: blue;
+    }
+
+
+/* Container */
         .container {
             width: 100%;
             margin: 0 auto;
             display: flex;
-            flex-direction: colum;
+            flex-direction: column;
             flex-wrap: nowrap;
         }
-        
+/* Header*/
         .header {
             height: 100hv;
             background-size: cover;
         }
-        
-        nav {
-            display: flex;
-            justify-content: space-around;
-            outline: 1px solid white;
-            width: 75%;
-            margin: 10px auto;
-            color: blue;
-        }
-        
+
         .header-logo {
             outline: 1px solid white;
             flex: 1;
@@ -120,3 +126,49 @@
         .comunidade p {
             color: white;
         }
+/*main*/
+.main{
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-noticia{
+    outline: 1px solid black;
+    width:  100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    width: 50%;
+    margin: 50px auto;
+    flex: 1;
+    outline: 1px solid black;
+    border-radius: 25% 10%;
+}
+
+/*footer*/
+
+.footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo,
+.footer-copy,
+.footer-web{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-web ul{
+    display: flex;
+    list-style: none;
+}
+.footer-web ul li{
+    flex: 1;
+}
