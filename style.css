@@ -150,6 +150,33 @@
     border-radius: 25% 10%;
 }
 
+.main-dev{
+    outline: 1px solid black;
+    width:  100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.devs-conteiner{
+    outline: 1px solid black;
+    width: 90%;
+    margin: 0 auto 80px auto;
+    flex: 1;
+}
+
+.dev{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    outline: 1px solid black;
+    
+}
+
+.dev-img{
+    outline: 1px solid black;
+}
+
 /*footer*/
 
 .footer{
