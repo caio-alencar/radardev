@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Radar Dev</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
@@ -14,7 +14,7 @@
         <header class="header">
             <nav>
                 <div class="header-logo">
-                    <img src="logo.png" alt="logo" width="90%" height="90%">
+                    <img src="./img/logo.png" alt="logo" width="90%" height="90%">
                 </div>
                 <ul class="header-menu">
                     <li><a href="#main-noticias">Novidades</a></li>
@@ -34,14 +34,15 @@
         </header>
 
         <main class="main">
-            <section class="main-noticias">
+            <section class="main-noticias" id="main-noticias">
                 <div class="main-content">
                     <h1>Novidades</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
+
                 <div class="noticia">
                     <div class="noticia-img">
-                        <img src="#" alt="">
+                        <img src="#" height="50" alt="">
                     </div>
                     <h1>noticia</h1>
                     <p>kçlkçlkçlkçl</p>
@@ -49,24 +50,53 @@
 
                 <div class="noticia">
                     <div class="noticia-img">
-                        <img src="#" alt="img3">
+                        <img src="#" height="50" alt="img3">
                     </div>
                     <h1>notiii</h1>
                     <p>kçlkçlkçl</p>
                 </div>
 
-                <div class="noticia">
-                    <div class="noticia-img">
-                        <img src="#" alt="img3">
+            </section>
+
+            <section class="main-dev" id="main-dev">
+                <div class="main-content">
+                    <h1>Dev</h1>
+                    <p>Veja nossas últimas notícias, atualizações e histórias para desenvolvedores.</p>
+                </div>
+
+                <div class="devs-conteiner">
+                    
+                    <div class="dev">
+                        <div class="dev-img">
+                            <img src="./img/dev-01.png" height="70" alt="dev-01">
+                        </div>
+                        <h1>A segunda geração de frameworks e bibliotecas JavaScript: para além do Angular, React e Vue!</h1>
+                        <p>Nos últimos anos, grandes empresas abriram o código de suas soluções internas em 
+                            JavaScript com um grande foco na confiabilidade (reliability), estabilidade e manutenibilidade. 
+                            No FOSDEM'20, Geertjan Wielenga explicou as razões por trás desse movimento e 
+                            quais os benefícios disso para a comunidade de desenvolvimento de software.</p>
                     </div>
-                    <h1>jkjlkljl</h1>
-                    <p>kçlkçlkçlkçl</p>
+    
+                    <div class="dev">
+                        <div class="dev-img">
+                            <img src="./img/dev-02.jpg"  height="70" alt="dev-02">
+                        </div>
+                        <h1>Metade dos desenvolvedores do Brasil não possuem ensino superior.</h1>
+                        <p>Pesquisa inédita da Bain com o Google mostrou que 75% dos desenvolvedores estão há menos de cinco anos na área.</p>
+                    </div>
+
+                    <div class="dev">
+                        <div class="dev-img">
+                            <img src="./img/dev-03.jpg" height="70"  alt="dev-03">
+                        </div>
+                        <h1>Por que você deveria começar a aprender a programar neste instante.</h1>
+                        <p>Demanda por profissionais de tecnologia deve crescer no Brasil nos próximos anos. Saber programar, principalmente na linguagem Python, será um diferencial</p>
+                    </div>
                 </div>
 
             </section>
-            <section class="main-dev">
-                <h1>Dev</h1>
-            </section>
+
+
             <section class="main-jogos">
                 <h1>Jogos</h1>
             </section>
@@ -84,7 +114,7 @@
 
     <footer class="footer">
         <div class="footer-logo">
-            <img src="logo.png" alt="logo" width="40%" height="40%">
+            <img src="./img/logo.png" alt="logo" width="40%" height="40%">
         </div>
         <div class="footer-copy">Direitos Reservados &copy</div>
         <div class="footer-web">
