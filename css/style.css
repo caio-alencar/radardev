@@ -10,7 +10,6 @@
     nav {
         display: flex;
         justify-content: space-around;
-        outline: 1px solid white;
         width: 75%;
         margin: 10px auto;
         color: blue;
@@ -32,7 +31,6 @@
     }
     
     .header-logo {
-        outline: 1px solid white;
         flex: 1;
         display: flex;
         transition: opacity 2s;
@@ -42,14 +40,12 @@
     
     .header-logo img {
         list-style: none;
-        outline: 1px solid white;
         color: black;
         display: block;
     }
     
     .header-menu {
         flex: 1;
-        outline: 1px solid white;
         display: flex;
         justify-content: flex-end;
         height: 50px;
@@ -59,7 +55,6 @@
         list-style: none;
         margin: 30px;
         font-size: 19px;
-        outline: 1px solid white;
         text-align: center;
         font-weight: bold;
         float: left;
@@ -77,7 +72,6 @@
     }
     
     .header-content {
-        outline: 2px solid white;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -138,7 +132,6 @@
     /*main*/
     
     .main {
-        outline: 1px solid white;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -146,7 +139,6 @@
     /* sessão novidades */
     
     .main-novidades {
-        outline: 1px solid white;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -157,7 +149,6 @@
         width: 50%;
         margin: 15px auto;
         flex: 1;
-        outline: 1px solid white;
         border-radius: 25% 10%;
     }
     
@@ -183,7 +174,6 @@
     }
     
     .novidades-conteiner {
-        outline: 1px solid white;
         width: 90%;
         margin: 0 auto 80px auto;
         flex: 1;
@@ -193,7 +183,6 @@
         display: flex;
         flex-direction: column;
         margin: 15px;
-        outline: 1px solid white;
         border-radius: 10px;
         min-height: 506px;
         overflow: hidden;
@@ -242,7 +231,6 @@
     /* sessão jogos */
     
     .main-jogos {
-        outline: 1px solid white;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -253,7 +241,6 @@
         width: 50%;
         margin: 15px auto;
         flex: 1;
-        outline: 1px solid white;
     }
     
     .main-content2 h1 {
@@ -273,7 +260,6 @@
     }
     
     .jogos {
-        outline: 1px solid white;
         height: 120px;
         display: block;
         min-height: 506px;
@@ -372,7 +358,6 @@
     /*sessão dev */
     
     .main-dev {
-        outline: 1px solid white;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -383,7 +368,6 @@
         width: 50%;
         margin: 15px auto;
         flex: 1;
-        outline: 1px solid white;
         border-radius: 25% 10%;
     }
     
@@ -404,7 +388,6 @@
     }
     
     .devs-conteiner {
-        outline: 1px solid white;
         width: 90%;
         margin: 0 auto;
         flex: 1;
@@ -415,7 +398,6 @@
         display: flex;
         flex-direction: column;
         margin: 15px;
-        outline: 1px solid white;
         border-radius: 10px;
         display: block;
         min-height: 506px;
@@ -442,7 +424,6 @@
     }
     
     .dev-img img {
-        outline: 1px solid white;
         image-orientation: center;
     }
     /* sessao redes */
@@ -450,7 +431,6 @@
     .main-content4 {
         width: 80%;
         margin: 13px auto;
-        outline: 1px solid white;
         display: flex;
     }
     
@@ -488,7 +468,6 @@
         display: flex;
         flex-direction: column;
         margin: 15px;
-        outline: 1px solid white;
         border-radius: 10px;
         min-height: 506px;
         overflow: hidden;
@@ -515,7 +494,6 @@
     }
     
     .dual-img img {
-        outline: 1px solid white;
         image-orientation: center;
     }
     /* Leia mais */
