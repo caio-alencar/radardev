@@ -1,870 +1,1122 @@
-    /* CSS Reset*/
-    
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: "Quicksand", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    /* Nav*/
-    
-    nav {
-        display: flex;
-        justify-content: space-around;
-        width: 75%;
-        margin: 10px auto;
-    }
-    /* Container */
-    
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    /* Header*/
-    
-    .header {
-        height: 90hv;
-        background-size: cover;
-    }
-    
-    .header-logo {
-        flex: 1;
-        display: flex;
-        transition: opacity 2s;
-        height: 110px;
-        margin-right: 25%;
-    }
-    
-    .header-logo img {
-        list-style: none;
-        color: black;
-        display: block;
-    }
-    
-    .header-menu {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        height: 50px;
-    }
-    
-    .header-menu li {
-        list-style: none;
-        margin: 30px;
-        font-size: 19px;
-        text-align: center;
-        font-weight: bold;
-        float: left;
-        margin-right: 15px;
-    }
-    
-    .header-menu li a:link,
-    a:visited {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .header-menu li a:hover {
-        color: #f5620c;
-    }
-    
-    .header-content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 15px;
-        background: url("https://media.itpro.co.uk/image/upload/v1570816546/itpro/2019/02/software_shutterstock_1290773869.jpg") no-repeat fixed;
-        background-size: cover;
-        height: 500px;
-        width: 100%;
-        background-position: center;
-    }
-    
-    .header-content h1 {
-        margin-top: 200px;
-        font-size: 50px;
-        color: white;
-        font-weight: 900;
-        font-family: sans-serif;
-        text-shadow: 5px 5px 5px black;
-    }
-    
-    .header-content h3 {
-        font-size: 18px;
-        color: #FFFFF0;
-        font-weight: 500;
-        margin-top: 0 auto;
-        font-family: Oxygen, Arial;
-        text-shadow: 5px 5px 5px black;
-    }
-    
-    .comunidade {
-        width: 180px;
-        height: 50px;
-        margin: 25px auto;
-        display: flex;
-        align-items: center;
-        border-radius: 18px;
-        background-color: #f5620c;
-        justify-content: center;
-        text-transform: uppercase;
-        font-weight: 200px;
-        padding: 0px 0px;
-        font-weight: bold;
-    }
-    
-    .comunidade:hover {
-        background-color: rgb(2, 28, 51);
-        color: white;
-    }
-    /* rgb(2, 28, 51*/
-    
-    .comunidade:link {
-        text-decoration: none;
-    }
-    
-    .comunidade p {
-        color: white;
-    }
-    /*main*/
-    
-    .main {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    /* sessão novidades */
-    
-    .main-novidades {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .main-content {
-        width: 50%;
-        margin: 15px auto;
-        flex: 1;
-        border-radius: 25% 10%;
-    }
-    
-    .main-content h1 {
-        font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
-        text-transform: uppercase;
-        margin-top: 64px;
-        margin-bottom: 32px;
-    }
-    
-    .linha {
-        width: 650px;
-        border: 1px solid #9FB6CD;
-        border-radius: 50%;
-        display: flex;
-    }
-    
-    .main-content p {
-        font: 400 18px / 1.77778 Segoe UI, system-ui, -apple-system, sans-serif;
-        margin-top: 36px;
-        margin-bottom: 36px;
-        color: grey;
-    }
-    
-    .novidades-conteiner {
-        width: 90%;
-        margin: 0 auto 80px auto;
-        flex: 1;
-        flex-direction: row;
-    }
-    
-    .novidades {
-        display: flex;
-        flex-direction: row;
-        margin: 18px;
-        border-radius: 10px;
-        min-height: 506px;
-        overflow: hidden;
-        position: relative;
-        float: left;
-        width: 30%;
-        margin-top: 5vh;
-        border-radius: 5px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-    }
-    
-    .novidades::after {
-        content: "";
-        border-radius: 5px;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-    }
-    
-    .novidades:hover {
-        -webkit-transform: scale(1.20, 1.20);
-        transform: scale(1.20, 1.20);
-    }
-    
-    .novidades:hover::after {
-        opacity: 1;
-    }
-    
-    .novidades h2 {
-        color: #1b1919;
-        font: 900 21px / 1.33333 "Google Sans", sans-serif;
-        margin-top: 20px;
-        margin-bottom: 32px;
-        text-align: left;
-        flex-direction: row;
-        display: flex;
-    }
-    /*redatores */
-    
-    .redator img {
-        float: left;
-        border-radius: 20%;
-        margin-top: -12px;
-        flex-direction: row;
-        display: flex;
-    }
-    
-    .redator h4 {
-        float: left;
-        color: rgb(34, 32, 32);
-        margin-left: 15px;
-        margin-top: -12px;
-        flex-direction: row;
-        display: flex;
-    }
-    
-    .redator h5 {
-        float: left;
-        color: rgb(66, 65, 65);
-        margin-left: 15px;
-        margin-top: -12px;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .novidades p {
-        color: black;
-        display: flex;
-        text-align: left;
-        margin-top: 15px;
-        flex-direction: row;
-        display: flex;
-    }
-    /* sessão jogos */
-    
-    .main-jogos {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .main-content2 {
-        width: 50%;
-        margin: 15px auto;
-        flex: 1;
-    }
-    
-    .main-content2 h1 {
-        font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
-        text-transform: uppercase;
-        margin-top: 64px;
-        margin-bottom: 32px;
-        text-align: center;
-    }
-    
-    .main-content2 p {
-        font: 400 18px / 1.77778 Segoe UI, system-ui, -apple-system, sans-serif;
-        margin-top: 36px;
-        margin-bottom: 36px;
-        color: grey;
-        text-align: center;
-    }
-    
-    .jogos {
-        height: 120px;
-        display: block;
-        min-height: 506px;
-        position: relative;
-        float: left;
-        width: 100%;
-        margin-top: 0 auto;
-        background: #58381a52;
-    }
-    
-    .jogos h1 {
-        float: right;
-        margin-top: 15%;
-        margin-right: 5%;
-        text-align: center;
-        font-weight: 900;
-        color: white;
-        text-shadow: 5px 5px 5px grey;
-    }
-    
-    .requisitos-jogo {
-        float: right;
-        margin-top: -20%;
-        margin-right: 9%;
-    }
-    
-    .requisitos-jogo h3 {
-        font-weight: 500;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
-        text-shadow: 5px 5px 5px grey;
-        text-align: center;
-    }
-    
-    .requisitos {
-        width: 150px;
-        height: 40px;
-        margin: 0 15px;
-        display: flex;
-        align-items: center;
-        border-radius: 20px;
-        background-color: rgb(2, 28, 51);
-        justify-content: center;
-        text-transform: uppercase;
-        font-weight: 200px;
-        padding: 0px 0px;
-        font-weight: bold;
-        float: left;
-        margin-right: -17px;
-        margin-top: 5px;
-    }
-    
-    .requisitos p {
-        color: white;
-    }
-    
-    .requisitos:hover {
-        background-color: #f5620c;
-        color: white;
-    }
-    
-    .requisitos:link {
-        text-decoration: none;
-    }
-    
-    .download {
-        width: 150px;
-        height: 40px;
-        margin: 0 25px;
-        display: flex;
-        align-items: center;
-        border-radius: 20px;
-        background-color: rgb(2, 28, 51);
-        justify-content: center;
-        text-transform: uppercase;
-        font-weight: 200px;
-        padding: 0px 0px;
-        font-weight: bold;
-        float: left;
-        margin-right: 15px;
-        margin-top: 5px;
-    }
-    
-    .download p {
-        color: white;
-    }
-    
-    .download:hover {
-        background-color: #f5620c;
-        color: white;
-    }
-    
-    .download:link {
-        text-decoration: none;
-    }
-    /*sessão dev */
-    
-    .main-dev {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .main-content3 {
-        width: 50%;
-        margin: 15px auto;
-        flex: 1;
-        border-radius: 25% 10%;
-    }
-    
-    .main-content3 h1 {
-        font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
-        text-transform: uppercase;
-        margin-top: 64px;
-        margin-bottom: 32px;
-        text-align: center;
-    }
-    
-    .main-content3 p {
-        font: 400 18px / 1.77778 Segoe UI, system-ui, -apple-system, sans-serif;
-        margin-top: 36px;
-        margin-bottom: 36px;
-        color: grey;
-        text-align: center;
-    }
-    
-    .devs-conteiner {
-        width: 90%;
-        margin: 0 auto;
-        flex: 1;
-        display: flex;
-    }
-.dual-conteiner {
-        width: 90%;
-        margin: 0 auto;
-        flex: 1;
-        display: flex;
-    }
-    
-    .dev {
-        display: flex;
-        flex-direction: column;
-        margin: 18px;
-        border-radius: 10px;
-        display: block;
-        min-height: 506px;
-        overflow: hidden;
-        position: relative;
-        float: left;
-        width: 30%;
-        margin-top: 5vh;
-        border-radius: 5px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-    }
-    
-    .dev::after {
-        content: "";
-        border-radius: 5px;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-    }
-    
-    .dev:hover {
-        -webkit-transform: scale(1.20, 1.20);
-        transform: scale(1.20, 1.20);
-    }
-    
-    .dev:hover::after {
-        opacity: 1;
-    }
-    
-    .dev h2 {
-        color: #1b1919;
-        font: 900 21px / 1.33333 "Google Sans", sans-serif;
-        margin-top: 20px;
-        margin-bottom: 32px;
-        text-align: left;
-    }
-    
-    .dev p {
-        color: black;
-        display: flex;
-        text-align: left;
-        margin-top: 15px;
-    }
-    
-    .dev-img img {
-        image-orientation: center;
-    }
-    /* sessao redes */
-    
-    .main-content4 {
-        width: 80%;
-        margin: 13px auto;
-        display: flex;
-    }
-    
-    .main-content4 h1 {
-        font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
-        text-transform: uppercase;
-        margin-top: 64px;
-        margin-bottom: 32px;
-        margin-left: 15%;
-    }
-    
-    .main-content5 {
-        width: 120%;
-        margin: 0 450px;
-        float: left;
-    }
-    
-    .main-content5 h1 {
-        font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
-        text-transform: uppercase;
-        margin-top: 64px;
-        margin-bottom: 32px;
-        margin-left: 15%;
-    }
-    
-    .linha-1 {
-        width: 650px;
-        border: 1px solid #9FB6CD;
-        border-radius: 50%;
-        display: flex;
-        margin-left: 24%;
-    }
-    
-    .dual {
-        display: flex;
-        flex-direction: row;
-        float: left;
-        margin: 15px;
-        border-radius: 10px;
-        min-height: 506px;
-        overflow: hidden;
-        position: relative;
-        width: 50%;
-        margin-top: 5vh;
-        margin-left: 10%;
-        border-radius: 5px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-    }
-    
-    .dual::after {
-        content: "";
-        border-radius: 5px;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
-    }
-    
-    .dual:hover {
-        -webkit-transform: scale(1.20, 1.20);
-        transform: scale(1.20, 1.20);
-    }
-    
-    .dual:hover::after {
-        opacity: 1;
-    }
-    
-    .dual h2 {
-        color: #1b1919;
-        font: 900 21px / 1.33333 "Google Sans", sans-serif;
-        margin-top: 20px;
-        margin-bottom: 32px;
-        text-align: left;
-        flex-direction: row;
-        display: flex;
-    }
-    
-    .dual p {
-        color: black;
-        display: flex;
-        text-align: left;
-        margin-top: 15px;
-        flex-direction: row;
-        display: flex;
-    }
-    
-    .dual-img img {
-        image-orientation: center;
-        flex-direction: row;
-        display: flex;
-    }
-    /* Leia mais */
-    
-    .leia-mais {
-        margin: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        float: left;
-        margin-left: 45%;
-        margin-top: 15px;
-        font-family: 14px "Segoe UI", system-ui, -apple-system, sans-serif;
-        width: 10%;
-    }
-    
-    .leia-mais p {
-        color: #3740ff;
-    }
-    
-    .leia-mais:hover {
-        background-color: rgba(128, 128, 128, 0.171);
-        width: 150px;
-        height: 40px;
-        display: flex;
-        border-radius: 5px;
-    }
-    
-    .leia-mais:link {
-        text-decoration: none;
-    }
-    /* leia1*/
-    
-    .leia-mais1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 25px;
-        font-family: 14px "Segoe UI", system-ui, -apple-system, sans-serif;
-        float: left;
-        width: 10%;
-        margin: 25px;
-        flex-wrap: wrap;
-        margin-left: 20%;
-    }
-    
-    .leia-mais1 p {
-        color: #3740ff;
-        display: block;
-        text-align: center;
-    }
-    
-    .leia-mais1:hover {
-        background-color: rgba(128, 128, 128, 0.171);
-        width: 150px;
-        height: 40px;
-        display: flex;
-        border-radius: 5px;
-        position: center;
-    }
-    
-    .leia-mais1:link {
-        text-decoration: none;
-    }
-    /* leia2*/
-    
-    .leia-mais2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 15px;
-        font-family: 14px "Segoe UI", system-ui, -apple-system, sans-serif;
-        float: left;
-        width: 10%;
-        height: 30%;
-        margin: 25px;
-        flex-wrap: wrap;
-        margin-left: 30%;
-    }
-    
-    .leia-mais2 p {
-        color: #3740ff;
-        display: block;
-        text-align: center;
-    }
-    
-    .leia-mais2:hover {
-        background-color: rgba(128, 128, 128, 0.171);
-        width: 150px;
-        height: 40px;
-        display: flex;
-        border-radius: 5px;
-        position: center;
-    }
-    
-    .leia-mais2:link {
-        text-decoration: none;
-    }
-    /* links */
-    
-    .dual-link,
-    .novidades-link,
-    .dev-link {
-        text-decoration: none;
-    }
-    /*footer*/
-    
-    .footer {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .footer-logo,
-    .footer-copy,
-    .footer-web {
-        flex: 1;
-        text-align: center;
-    }
-    
-    .footer-web ul {
-        display: flex;
-        list-style: none;
-    }
-    
-    .footer-web ul li {
-        flex: 1;
-    }
-    /*notebooks*/
-    
-    @media (min-width: 600px) and (max-width: 991px) {
+        /* CSS Reset*/
+        
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Quicksand", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* Nav*/
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 75%;
+            margin: 10px auto;
+        }
+        /* Container */
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        /* Header*/
+        
+        .header {
+            height: 90hv;
+            background-size: cover;
+        }
+        
         .header-logo {
-            width: 100%;
+            flex: 1;
+            display: flex;
+            transition: opacity 2s;
+            height: 110px;
+            margin-right: 25%;
         }
+        
         .header-logo img {
-            width: 100%;
+            list-style: none;
+            color: black;
+            display: block;
         }
+        
+        .header-menu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            height: 50px;
+        }
+        
+        .header-menu li {
+            list-style: none;
+            margin: 30px;
+            font-size: 19px;
+            text-align: center;
+            font-weight: bold;
+            float: left;
+            margin-right: 15px;
+        }
+        
+        .header-menu li a:link,
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .header-menu li a:hover {
+            color: #f5620c;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 15px;
+            background: url("https://media.itpro.co.uk/image/upload/v1570816546/itpro/2019/02/software_shutterstock_1290773869.jpg") no-repeat fixed;
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+            background-position: center;
+        }
+        
         .header-content h1 {
-            font-size: 48px;
+            margin-top: 200px;
+            font-size: 50px;
+            color: white;
+            font-weight: 900;
+            font-family: sans-serif;
+            text-shadow: 5px 5px 5px black;
         }
+        
         .header-content h3 {
-            font-size: 20px;
+            font-size: 18px;
+            color: #FFFFF0;
+            font-weight: 500;
+            margin-top: 0 auto;
+            font-family: Oxygen, Arial;
+            text-shadow: 5px 5px 5px black;
         }
-        .header-logo img {
-            max-width: 200px;
-            max-height: 150px;
-            width: auto;
-            height: auto;
+        
+        .comunidade {
+            width: 180px;
+            height: 50px;
+            margin: 25px auto;
+            display: flex;
+            align-items: center;
+            border-radius: 18px;
+            background-color: #f5620c;
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 200px;
+            padding: 0px 0px;
+            font-weight: bold;
         }
+        
+        .comunidade:hover {
+            background-color: rgb(2, 28, 51);
+            color: white;
+        }
+        /* rgb(2, 28, 51*/
+        
+        .comunidade:link {
+            text-decoration: none;
+        }
+        
+        .comunidade p {
+            color: white;
+        }
+        /*main*/
+        
+        .main {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        /* sessão novidades */
+        
+        .main-novidades {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main-content {
+            width: 50%;
+            margin: 15px auto;
+            flex: 1;
+            border-radius: 25% 10%;
+        }
+        
+        .main-content h1 {
+            font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
+            text-transform: uppercase;
+            margin-top: 64px;
+            margin-bottom: 32px;
+        }
+        
+        .linha {
+            width: 650px;
+            border: 1px solid #9FB6CD;
+            border-radius: 50%;
+            display: flex;
+        }
+        
+        .main-content p {
+            font: 400 18px / 1.77778 Segoe UI, system-ui, -apple-system, sans-serif;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            color: grey;
+        }
+        
+        .novidades-conteiner {
+            width: 90%;
+            margin: 0 auto 80px auto;
+            flex: 1;
+            flex-direction: row;
+        }
+        
         .novidades {
-            width: 25%;
+            display: flex;
+            flex-direction: row;
+            margin: 18px;
+            border-radius: 10px;
+            min-height: 506px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            width: 30%;
+            margin-top: 5vh;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+        }
+        
+        .novidades::after {
+            content: "";
+            border-radius: 5px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
-            margin-left: 5%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+        }
+        
+        .novidades:hover {
+            -webkit-transform: scale(1.20, 1.20);
+            transform: scale(1.20, 1.20);
+        }
+        
+        .novidades:hover::after {
+            opacity: 1;
+        }
+        
+        .novidades h2 {
+            color: #1b1919;
+            font: 900 21px / 1.33333 "Google Sans", sans-serif;
+            margin-top: 20px;
+            margin-bottom: 32px;
+            text-align: left;
+            flex-direction: row;
+            display: flex;
+        }
+        /*redatores */
+        
+        .redator img {
+            float: left;
+            border-radius: 20%;
+            margin-top: -12px;
+            flex-direction: row;
+            display: flex;
+        }
+        
+        .redator h4 {
+            float: left;
+            color: rgb(34, 32, 32);
+            margin-left: 15px;
+            margin-top: -12px;
+            flex-direction: row;
+            display: flex;
+        }
+        
+        .redator h5 {
+            float: left;
+            color: rgb(66, 65, 65);
+            margin-left: 15px;
+            margin-top: -12px;
             display: flex;
             flex-direction: row;
         }
-        .novidades 
-        h2,
-        .dev
-        h2, 
-        .dual h2 {
-            font-size: 22px;
+        
+        .novidades p {
+            color: black;
+            display: flex;
+            text-align: left;
+            margin-top: 15px;
+            flex-direction: row;
+            display: flex;
         }
-        .novidades p, 
-        .dev p, 
-        .dual p {
-            font-size: 16px;
-         }
-        .jogos h1 {
-            margin-left: 62%;
-            margin-top: -35%;
-            text-align: center;
-            font-size: 30px;
-        }
-        .requisitos-jogo h3 {
-            margin-left: 20%;
-            margin-top: -20%;
-            text-align: center;
-        }
-        .requisitos {
-            margin-left: 35%;
-        }
-        .download {
-            margin-top: 8%;
-            margin-left: 35%;
-        }
-        .download p,
-        .requisitos p {
-            font-size: 18px;
-        }
-        .main-content h1,
-        .main-content2 h1,
-        .main-content3 h1 {}
-        .main-content4 {
-            margin-left: 10%;
-        }
-        .main-content5 h1 {
-            margin-left: -100%;
-        }
-        .linha {
+        /* sessão jogos */
+        
+        .main-jogos {
             width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
         }
-        .linha-1 {
-            width: 650px;
+        
+        .main-content2 {
+            width: 50%;
+            margin: 15px auto;
+            flex: 1;
+        }
+        
+        .main-content2 h1 {
+            font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
+            text-transform: uppercase;
+            margin-top: 64px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        
+        .main-content2 p {
+            font: 400 18px / 1.77778 Segoe UI, system-ui, -apple-system, sans-serif;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            color: grey;
+            text-align: center;
+        }
+        
+        .jogos {
+            height: 120px;
+            display: block;
+            min-height: 506px;
+            position: relative;
+            float: left;
+            width: 100%;
+            margin-top: 0 auto;
+            background: #58381a52;
+        }
+        
+        .jogos h1 {
+            float: right;
+            margin-top: 15%;
+            margin-right: 5%;
+            text-align: center;
+            font-weight: 900;
+            color: white;
+            text-shadow: 5px 5px 5px grey;
+        }
+        
+        .requisitos-jogo {
+            float: right;
+            margin-top: -20%;
+            margin-right: 9%;
+        }
+        
+        .requisitos-jogo h3 {
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            text-shadow: 5px 5px 5px grey;
+            text-align: center;
+        }
+        
+        .requisitos {
+            width: 150px;
+            height: 40px;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            background-color: rgb(2, 28, 51);
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 200px;
+            padding: 0px 0px;
+            font-weight: bold;
+            float: left;
+            margin-right: -17px;
+            margin-top: 5px;
+        }
+        
+        .requisitos p {
+            color: white;
+        }
+        
+        .requisitos:hover {
+            background-color: #f5620c;
+            color: white;
+        }
+        
+        .requisitos:link {
+            text-decoration: none;
+        }
+        
+        .download {
+            width: 150px;
+            height: 40px;
+            margin: 0 25px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            background-color: rgb(2, 28, 51);
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 200px;
+            padding: 0px 0px;
+            font-weight: bold;
+            float: left;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+        
+        .download p {
+            color: white;
+        }
+        
+        .download:hover {
+            background-color: #f5620c;
+            color: white;
+        }
+        
+        .download:link {
+            text-decoration: none;
+        }
+        /*sessão dev */
+        
+        .main-dev {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main-content3 {
+            width: 50%;
+            margin: 15px auto;
+            flex: 1;
+            border-radius: 25% 10%;
+        }
+        
+        .main-content3 h1 {
+            font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
+            text-transform: uppercase;
+            margin-top: 64px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        
+        .main-content3 p {
+            font: 400 18px / 1.77778 Segoe UI, system-ui, -apple-system, sans-serif;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            color: grey;
+            text-align: center;
+        }
+        
+        .devs-conteiner {
+            width: 90%;
+            margin: 0 auto;
+            flex: 1;
+            display: flex;
+        }
+        
+        .dev {
+            display: flex;
+            flex-direction: column;
+            margin: 18px;
+            border-radius: 10px;
+            display: block;
+            min-height: 506px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            width: 30%;
+            margin-top: 5vh;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+        }
+        
+        .dev::after {
+            content: "";
+            border-radius: 5px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+        }
+        
+        .dev:hover {
+            -webkit-transform: scale(1.20, 1.20);
+            transform: scale(1.20, 1.20);
+        }
+        
+        .dev:hover::after {
+            opacity: 1;
+        }
+        
+        .dev h2 {
+            color: #1b1919;
+            font: 900 21px / 1.33333 "Google Sans", sans-serif;
+            margin-top: 20px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+        
+        .dev p {
+            color: black;
+            display: flex;
+            text-align: left;
+            margin-top: 15px;
+        }
+        
+        .dev-img img {
+            image-orientation: center;
+        }
+        /* sessao dual */
+        
+        .main-content4 {
+            width: 80%;
+            margin: 13px auto;
+            display: flex;
+        }
+        
+        .main-content4 h1 {
+            font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
+            text-transform: uppercase;
+            margin-top: 64px;
+            margin-bottom: 32px;
             margin-left: 15%;
         }
-        .redator h5 {
-            margin-left: 56px;
+        
+        .main-content5 {
+            width: 120%;
+            margin: 0 450px;
+            float: left;
         }
+        
+        .main-content5 h1 {
+            font: 550 24px Segoe UI, system-ui, -apple-system, sans-serif;
+            text-transform: uppercase;
+            margin-top: 64px;
+            margin-bottom: 32px;
+            margin-left: 15%;
+        }
+        
+        .linha-1 {
+            width: 650px;
+            border: 1px solid #9FB6CD;
+            border-radius: 50%;
+            display: flex;
+            margin-left: 24%;
+        }
+        
         .dual {
-            width: 50%;
+            display: flex;
+            flex-direction: row;
+            float: left;
+            margin: 15px;
+            border-radius: 10px;
+            min-height: 506px;
+            overflow: hidden;
+            position: relative;
+            width: 25%;
+            margin-top: 5vh;
+            margin-left: 15%;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+        }
+        
+        .dual::after {
+            content: "";
+            border-radius: 5px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.100, 0.84, 0.44, 1);
+        }
+        
+        .dual:hover {
+            -webkit-transform: scale(1.20, 1.20);
+            transform: scale(1.20, 1.20);
+        }
+        
+        .dual:hover::after {
+            opacity: 1;
+        }
+        
+        .dual h2 {
+            color: #1b1919;
+            font: 900 21px / 1.33333 "Google Sans", sans-serif;
+            margin-top: 20px;
+            margin-bottom: 32px;
+            text-align: left;
+            flex-direction: row;
+            display: flex;
+        }
+        
+        .dual p {
+            color: black;
+            display: flex;
+            text-align: left;
+            margin-top: 15px;
+            flex-direction: row;
+            display: flex;
+        }
+        
+        .dual-img img {
+            image-orientation: center;
+            flex-direction: row;
+            display: flex;
+        }
+        /* Leia mais */
+        
+        .leia-mais {
+            margin: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            margin-left: 45%;
+            margin-top: 15px;
+            font-family: 14px "Segoe UI", system-ui, -apple-system, sans-serif;
+            width: 10%;
+        }
+        
+        .leia-mais p {
+            color: #3740ff;
+        }
+        
+        .leia-mais:hover {
+            background-color: rgba(128, 128, 128, 0.171);
+            width: 150px;
+            height: 40px;
+            display: flex;
+            border-radius: 5px;
+        }
+        
+        .leia-mais:link {
+            text-decoration: none;
+        }
+        /* leia1*/
+        
+        .leia-mais1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+            font-family: 14px "Segoe UI", system-ui, -apple-system, sans-serif;
+            float: left;
+            width: 10%;
+            margin: 25px;
+            flex-wrap: wrap;
+            margin-left: 20%;
+        }
+        
+        .leia-mais1 p {
+            color: #3740ff;
+            display: block;
+            text-align: center;
+        }
+        
+        .leia-mais1:hover {
+            background-color: rgba(128, 128, 128, 0.171);
+            width: 150px;
+            height: 40px;
+            display: flex;
+            border-radius: 5px;
+            position: center;
+        }
+        
+        .leia-mais1:link {
+            text-decoration: none;
+        }
+        /* leia2*/
+        
+        .leia-mais2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            font-family: 14px "Segoe UI", system-ui, -apple-system, sans-serif;
+            float: left;
+            width: 10%;
+            height: 30%;
+            margin: 25px;
+            flex-wrap: wrap;
+            margin-left: 30%;
+        }
+        
+        .leia-mais2 p {
+            color: #3740ff;
+            display: block;
+            text-align: center;
+        }
+        
+        .leia-mais2:hover {
+            background-color: rgba(128, 128, 128, 0.171);
+            width: 150px;
+            height: 40px;
+            display: flex;
+            border-radius: 5px;
+            position: center;
+        }
+        
+        .leia-mais2:link {
+            text-decoration: none;
+        }
+        /* links */
+        
+        .dual-link,
+        .novidades-link,
+        .dev-link {
+            text-decoration: none;
+        }
+        /*footer*/
+        
+        .footer {
             height: 100%;
             display: flex;
-            margin-left: 2%;
-        }
-        .leia-mais,
-        .leia-mais1,
-        .leia-mais2 {
-            width: 120px;
-            font-size: 12px;
-        }
-    }
-    /*tablets*/
-    
-    @media(min-width: 481px) and (max-width: 768px) {
-        .novidades {
+            align-items: center;
             width: 100%;
         }
-    }
-    /*smartphones*/
-    
-
-    @media (min-width: 0px) and (max-width: 480px) {
-        .header-logo {
-            width: 100%;
+        
+        .footer-logo,
+        .footer-copy,
+        .footer-web {
+            flex: 1;
+            text-align: center;
         }
-        .header-logo img {
-            width: 100%;
-          
-   /* @media (min-width: 360px) and (max-width: 640px) {*/
+        
+        .footer-web ul {
+            display: flex;
+            list-style: none;
         }
-        .header-content h1 {
-            font-size: 48px;
+        
+        .footer-web ul li {
+            flex: 1;
         }
-        .header-content h3 {
-            font-size: 20px;
+        /*notebooks*/
+        
+        @media (min-width: 600px) and (max-width: 991px) {
+            .header-logo {
+                width: 100%;
+            }
+            .header-logo img {
+                width: 100%;
+            }
+            .header-content h1 {
+                font-size: 48px;
+            }
+            .header-content h3 {
+                font-size: 20px;
+            }
+            .header-logo img {
+                max-width: 200px;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+            }
+            .novidades {
+                width: 25%;
+                height: 100%;
+                margin-left: 5%;
+                display: flex;
+                flex-direction: row;
+            }
+            .novidades h2,
+            .dev h2,
+            .dual h2 {
+                font-size: 22px;
+            }
+            .novidades p,
+            .dev p,
+            .dual p {
+                font-size: 16px;
+            }
+            .jogos h1 {
+                margin-left: 62%;
+                margin-top: -35%;
+                text-align: center;
+                font-size: 30px;
+            }
+            .requisitos-jogo h3 {
+                margin-left: 20%;
+                margin-top: -20%;
+                text-align: center;
+            }
+            .requisitos {
+                margin-left: 35%;
+            }
+            .download {
+                margin-top: 8%;
+                margin-left: 35%;
+            }
+            .download p,
+            .requisitos p {
+                font-size: 18px;
+            }
+            .main-content4 {
+                margin-left: 10%;
+            }
+            .main-content5 h1 {
+                margin-left: -100%;
+            }
+            .linha {
+                width: 100%;
+            }
+            .linha-1 {
+                width: 650px;
+                margin-left: 15%;
+            }
+            .redator h5 {
+                margin-left: 56px;
+            }
+            .dual {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                margin-left: 19%;
+            }
+            .leia-mais,
+            .leia-mais1,
+            .leia-mais2 {
+                width: 120px;
+                font-size: 12px;
+            }
         }
-        .header-logo img {
-            max-width: 200px;
-            max-height: 150px;
-            width: auto;
-            height: auto;
+        /*tablets*/
+        
+        @media(min-width: 481px) and (max-width: 768px) {
+            .header-logo {
+                width: 100%;
+            }
+            .header-logo img {
+                width: 100%;
+            }
+            .header-content h1 {
+                font-size: 48px;
+            }
+            .header-content h3 {
+                font-size: 20px;
+            }
+            .header-logo img {
+                max-width: 200px;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+            }
+            .novidades {
+                width: 25%;
+                height: 100%;
+                margin-left: 5%;
+                display: flex;
+                flex-direction: row;
+            }
+            .novidades h2,
+            .dev h2,
+            .dual h2 {
+                font-size: 22px;
+            }
+            .novidades p,
+            .dev p,
+            .dual p {
+                font-size: 16px;
+            }
+            .jogos h1 {
+                margin-left: 62%;
+                margin-top: 10%;
+                text-align: center;
+                font-size: 30px;
+            }
+            .requisitos-jogo h3 {
+                margin-left: 20%;
+                margin-top: -20%;
+                text-align: center;
+            }
+            .requisitos {
+                margin-left: 35%;
+            }
+            .download {
+                margin-top: 8%;
+                margin-left: 35%;
+            }
+            .download p,
+            .requisitos p {
+                font-size: 18px;
+            }
+            .main-content4 {
+                margin-left: 10%;
+            }
+            .main-content5 h1 {
+                margin-left: -100%;
+            }
+            .linha {
+                width: 100%;
+            }
+            .linha-1 {
+                width: 650px;
+                margin-left: 15%;
+            }
+            .redator h5 {
+                margin-left: 56px;
+            }
+            .dual {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                margin-left: 19%;
+            }
+            .leia-mais,
+            .leia-mais1,
+            .leia-mais2 {
+                width: 120px;
+                font-size: 12px;
+            }
         }
-        .comunidade img {
-            width: 100%;
+        /*smartphones*/
+        
+        @media (min-width: 0px) and (max-width: 480px) {
+            .header-logo {
+                width: 100%;
+            }
+            .header-logo img {
+                width: 100%;
+                /* @media (min-width: 360px) and (max-width: 640px) {*/
+            }
+            .header-content h1 {
+                font-size: 48px;
+            }
+            .header-content h3 {
+                font-size: 20px;
+            }
+            .header-logo img {
+                max-width: 200px;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+            }
+            .comunidade img {
+                width: 100%;
+            }
+            .novidades {
+                width: 29%;
+                height: 100%;
+            }
+            .novidades h1,
+            p {
+                font-size: 100px;
+            }
         }
-        .novidades {
-            width: 29%;
-            height: 100%;
+        /*tela maior*/
+        
+        @media(min-width: 1024px) and (max-width: 1366px) {
+            .header-logo {
+                width: 100%;
+            }
+            .header-logo img {
+                width: 100%;
+            }
+            .header-content h1 {
+                font-size: 48px;
+            }
+            .header-content h3 {
+                font-size: 20px;
+            }
+            .header-logo img {
+                max-width: 200px;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+            }
+            .novidades {
+                width: 25%;
+                height: 100%;
+                margin-left: 5%;
+                display: flex;
+                flex-direction: row;
+            }
+            .novidades h2,
+            .dev h2,
+            .dual h2 {
+                font-size: 22px;
+            }
+            .novidades p,
+            .dev p,
+            .dual p {
+                font-size: 16px;
+            }
+            .jogos h1 {
+                margin-left: 62%;
+                margin-top: -35%;
+                text-align: center;
+                font-size: 30px;
+            }
+            .requisitos-jogo h3 {
+                margin-left: 20%;
+                margin-top: -19%;
+                text-align: center;
+            }
+            .requisitos {
+                margin: 0px 15px;
+                margin-left: -1%;
+            }
+            .download {
+                margin: 0px -30px;
+                margin-left: 4%;
+            }
+            .download p,
+            .requisitos p {
+                font-size: 18px;
+            }
+            .main-content4 {
+                margin-left: 10%;
+            }
+            .main-content5 h1 {
+                margin-left: -100%;
+            }
+            .linha {
+                width: 100%;
+            }
+            .linha-1 {
+                width: 650px;
+                margin-left: 15%;
+            }
+            .redator h5 {
+                margin-left: 56px;
+            }
+            .dual {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                margin-left: 19%;
+            }
+            .leia-mais,
+            .leia-mais1,
+            .leia-mais2 {
+                width: 120px;
+                font-size: 12px;
+            }
         }
-        .novidades h1,
-        p {
-            font-size: 100px;
+        /*tela maior2*/
+        
+        @media(min-width: 1440px) and (max-width: 1600px) {
+            .header-logo {
+                width: 100%;
+            }
+            .header-logo img {
+                width: 100%;
+            }
+            .header-content h1 {
+                font-size: 48px;
+            }
+            .header-content h3 {
+                font-size: 20px;
+            }
+            .header-logo img {
+                max-width: 200px;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+            }
+            .novidades {
+                width: 25%;
+                height: 100%;
+                margin-left: 5%;
+                display: flex;
+                flex-direction: row;
+            }
+            .novidades h2,
+            .dev h2,
+            .dual h2 {
+                font-size: 22px;
+            }
+            .novidades p,
+            .dev p,
+            .dual p {
+                font-size: 16px;
+            }
+            .jogos h1 {
+                margin-left: 62%;
+                margin-top: -20%;
+                text-align: center;
+                font-size: 30px;
+            }
+            .requisitos-jogo h3 {
+                margin-top: 15%;
+                text-align: center;
+            }
+            .requisitos {
+                margin: 0px 15px;
+                margin-top: 5%;
+                margin-left: -1%;
+            }
+            .download {
+                margin: 0px -30px;
+                margin-top: 5%;
+                margin-left: 4%;
+            }
+            .download p,
+            .requisitos p {
+                font-size: 18px;
+            }
+            .main-content4 {
+                margin-left: 15%;
+            }
+            .main-content5 h1 {
+                margin-left: -100%;
+                margin: 10%;
+                margin-top: 50%;
+            }
+            .linha {
+                width: 750px;
+                margin-right: 15%;
+            }
+            .linha-1 {
+                width: 750px;
+                margin-left: 25%;
+            }
+            .redator h5 {
+                margin-left: 56px;
+            }
+            .dual {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                margin-left: 19%;
+            }
+            .leia-mais,
+            .leia-mais1 {
+                width: 120px;
+                font-size: 16px;
+            }
         }
-    }
