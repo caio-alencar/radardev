@@ -431,6 +431,12 @@
         flex: 1;
         display: flex;
     }
+.dual-conteiner {
+        width: 90%;
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+    }
     
     .dev {
         display: flex;
@@ -540,9 +546,9 @@
         min-height: 506px;
         overflow: hidden;
         position: relative;
-        width: 25%;
+        width: 50%;
         margin-top: 5vh;
-        margin-left: 15%;
+        margin-left: 10%;
         border-radius: 5px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
@@ -807,10 +813,10 @@
             margin-left: 56px;
         }
         .dual {
-            width: 20%;
+            width: 50%;
             height: 100%;
             display: flex;
-            margin-left: 19%;
+            margin-left: 2%;
         }
         .leia-mais,
         .leia-mais1,
