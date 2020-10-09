@@ -12,7 +12,6 @@
         justify-content: space-around;
         width: 75%;
         margin: 10px auto;
-        color: blue;
     }
     /* Container */
     
@@ -76,10 +75,10 @@
         flex-direction: column;
         text-align: center;
         margin-top: 15px;
-        background: url("https://media.itpro.co.uk/image/upload/v1570816546/itpro/2019/02/software_shutterstock_1290773869.jpg");
-        background-position: right top;
+        background: url("https://media.itpro.co.uk/image/upload/v1570816546/itpro/2019/02/software_shutterstock_1290773869.jpg") no-repeat fixed;
+        background-size: cover;
         height: 500px;
-        background-size: 100%;
+        width: 100%;
         background-position: center;
     }
     
@@ -829,12 +828,15 @@
     }
     /*smartphones*/
     
-    @media (min-width: 360px) and (max-width: 640px) {
+
+    @media (min-width: 0px) and (max-width: 480px) {
         .header-logo {
             width: 100%;
         }
         .header-logo img {
             width: 100%;
+          
+   /* @media (min-width: 360px) and (max-width: 640px) {*/
         }
         .header-content h1 {
             font-size: 48px;
