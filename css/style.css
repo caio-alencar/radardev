@@ -4,15 +4,59 @@
             padding: 0;
             margin: 0;
             font-family: "Quicksand", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
         }
+
         /* Nav*/
-        
-        nav {
-            display: flex;
-            justify-content: space-around;
-            width: 75%;
+    
+        .navbar { 
+            width: 90%;
+            height: 4rem;
             margin: 10px auto;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
         }
+
+        .navbar .toggleIcon {
+            display: none;
+        }
+        
+        .navbar .logo {
+            height: 100%;
+            margin-left: calc(100vw / 20);
+            cursor: pointer;
+        }
+        .navbar .logo img {
+            height: 100%;
+        }
+
+        .navbar .menu {
+            flex: 3;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .navbar .menu li {
+            list-style: none;
+            margin-right: 1rem;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .menu li a:link,
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .menu li a:hover {
+            color: #f5620c;
+        }
+
         /* Container */
         
         .container {
@@ -29,59 +73,18 @@
             background-size: cover;
         }
         
-        .header-logo {
-            flex: 1;
-            display: flex;
-            transition: opacity 2s;
-            height: 110px;
-            margin-right: 25%;
-        }
-        
-        .header-logo img {
-            list-style: none;
-            color: black;
-            display: block;
-        }
-        
-        .header-menu {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            height: 50px;
-        }
-        
-        .header-menu li {
-            list-style: none;
-            margin: 30px;
-            font-size: 19px;
-            text-align: center;
-            font-weight: bold;
-            float: left;
-            margin-right: 15px;
-        }
-        
-        .header-menu li a:link,
-        a:visited {
-            color: black;
-            text-decoration: none;
-        }
-        
-        .header-menu li a:hover {
-            color: #f5620c;
-        }
-        
         .header-content {
+            min-height: 87vh;
             display: flex;
+            align-items: center;
+             gap: 1rem; /*declara duas propriedades para separar linhas*/
             flex-direction: column;
             text-align: center;
-            margin-top: 15px;
             background: url("https://media.itpro.co.uk/image/upload/v1570816546/itpro/2019/02/software_shutterstock_1290773869.jpg") no-repeat fixed;
             background-size: cover;
-            height: 500px;
-            width: 100%;
             background-position: center;
         }
-        
+                
         .header-content h1 {
             margin-top: 200px;
             font-size: 50px;
@@ -96,7 +99,7 @@
             color: #FFFFF0;
             font-weight: 500;
             margin-top: 0 auto;
-            font-family: Oxygen, Arial;
+            font-family: 'Oxygen', Arial;
             text-shadow: 5px 5px 5px black;
         }
         
@@ -119,7 +122,6 @@
             background-color: rgb(2, 28, 51);
             color: white;
         }
-        /* rgb(2, 28, 51*/
         
         .comunidade:link {
             text-decoration: none;
@@ -128,13 +130,129 @@
         .comunidade p {
             color: white;
         }
+
+        
+        .header-content2 {
+            min-height: 87vh;
+            display: flex;
+            align-items: center;
+             gap: 1rem; /*declara duas propriedades para separar linhas*/
+            flex-direction: column;
+            text-align: center;
+            background: url("https://www.brunogalego.com.br/img/intro-img.svg") no-repeat fixed;
+            background-size: 200% 150%;
+            background-position: center;
+        }
+
+        .transparencia{ 
+            margin-top: 15%;
+            width: 30%; 
+            height: 230px; 
+            background:rgba(248, 248, 248, 0.432); 
+             
+            }
+        .transparencia form{
+            margin-top: 15px; 
+        }
+        .transparencia p{ 
+            color:rgba(31, 28, 28, 0.767);
+            margin-right: 17%;
+            font-family: sans-serif;
+        }
+       
+        .transparencia input{ 
+            border-radius: 5px;
+            background-color: rgba(211, 208, 208, 0.473);
+        }
+        .transparencia input:hover{ 
+            background-color:rgba(255, 255, 255, 0.651);
+        }
+
+           
+        .transparencia select{ 
+            width: 215px;
+            background-color:  rgba(211, 208, 208, 0.473);
+        }
+
+        .transparencia button{ 
+            margin-top: 15px;
+            width: 100px;
+            height: 30px;
+            align-items: center;
+            border-radius: 20px; 
+            background-color:#0c37f5; 
+            border-color: #fff;
+        }
+
+        .transparencia button p{ 
+            font-family: sans-serif;
+            font-size: 16px;
+            margin-left: 12px;
+            margin-top: 2px;
+            color: white;
+        }
+
+        .header-content3 {
+            min-height: 57vh;
+            display: flex;
+            align-items: center;
+             gap: 1rem; /*declara duas propriedades para separar linhas*/
+            flex-direction: column;
+            text-align: center;
+            background: url("https://exame.com/wp-content/uploads/2019/09/gettyimages-1082796134.jpg?quality=70&strip=info&resize=680,453") no-repeat fixed;
+            background-size: 100% 100%;
+            background-position: center;
+
+        }
+
+        .header-content3 h1{ 
+            color: rgba(0, 0, 0, 0.829);
+            margin-top: 30%;
+            font-size: 30px;
+            font-family: 'Oxygen', Arial;
+            margin-right: 20%;
+            width: 100%;
+        }
+
+        .redatores{ 
+            margin-right: 15%;
+            margin-top: 5px;
+        }
+        .redatores img{ 
+            width: 35px;
+            border-radius: 100%;
+            float: left;
+        }
+        .redatores h4,h5{ 
+            float: left;
+            margin-left: 1%;
+            color: rgba(34, 32, 32, 0.568);
+            }
+       
+
+        .corpo-noticia { 
+            text-align: left;
+            width: 65%;
+            margin-left: 9%;
+            margin-top: 10px;
+        }
+
+        .corpo-noticia p{ 
+            font-family: inherit;
+            font-size: 120%;
+            white-space: normal;
+            color: rgba(0, 0, 0, 0.712);
+        }
+       
+            
         /*main*/
         
         .main {
             display: flex;
             flex-direction: column;
-            text-align: center;
+            /* text-align: center; */
         }
+
         /* sessão novidades */
         
         .main-novidades {
@@ -148,6 +266,7 @@
             width: 50%;
             margin: 15px auto;
             flex: 1;
+            text-align:center;
             border-radius: 25% 10%;
         }
         
@@ -159,7 +278,6 @@
         }
         
         .linha {
-            width: 650px;
             border: 1px solid #9FB6CD;
             border-radius: 50%;
             display: flex;
@@ -171,20 +289,20 @@
             margin-bottom: 36px;
             color: grey;
         }
-        
-        .novidades-conteiner {
+
+        .novidades-conteiner{
             width: 90%;
             margin: 0 auto 80px auto;
-            flex: 1;
-            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
         }
-        
+       
         .novidades {
             display: flex;
-            flex-direction: row;
-            margin: 18px;
+            flex-direction:row;
+            margin: 18px; 
             border-radius: 10px;
-            min-height: 506px;
+            min-height: 500px;
             overflow: hidden;
             position: relative;
             float: left;
@@ -220,24 +338,33 @@
         .novidades:hover::after {
             opacity: 1;
         }
-        
+        .novidades p {
+            color: black;
+            display: flex;
+            text-align: left;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
         .novidades h2 {
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
             color: #1b1919;
             font: 900 21px / 1.33333 "Google Sans", sans-serif;
             margin-top: 20px;
             margin-bottom: 32px;
             text-align: left;
-            flex-direction: row;
-            display: flex;
+           
         }
         /*redatores */
         
         .redator img {
+            flex-direction: row;
+            display: flex;
             float: left;
             border-radius: 20%;
             margin-top: -12px;
-            flex-direction: row;
-            display: flex;
         }
         
         .redator h4 {
@@ -258,14 +385,7 @@
             flex-direction: row;
         }
         
-        .novidades p {
-            color: black;
-            display: flex;
-            text-align: left;
-            margin-top: 15px;
-            flex-direction: row;
-            display: flex;
-        }
+       
         /* sessão jogos */
         
         .main-jogos {
@@ -273,6 +393,7 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
         }
         
         .main-content2 {
@@ -303,7 +424,7 @@
             min-height: 506px;
             position: relative;
             float: left;
-            width: 100%;
+            min-width: 100%;
             margin-top: 0 auto;
             background: #58381a52;
         }
@@ -366,7 +487,7 @@
         .download {
             width: 150px;
             height: 40px;
-            margin: 0 25px;
+            margin: 0 25px; 
             display: flex;
             align-items: center;
             border-radius: 20px;
@@ -425,16 +546,20 @@
             text-align: center;
         }
         
+        .grid-devs{
+            display: flex;
+            flex-wrap: wrap;
+        }
         .devs-conteiner {
             width: 90%;
             margin: 0 auto;
-            flex: 1;
             display: flex;
+            flex-wrap: wrap;
         }
         
         .dev {
             display: flex;
-            flex-direction: column;
+            flex-direction: wrap;
             margin: 18px;
             border-radius: 10px;
             display: block;
@@ -499,6 +624,7 @@
             width: 80%;
             margin: 13px auto;
             display: flex;
+            flex-direction: wrap;
         }
         
         .main-content4 h1 {
@@ -510,9 +636,13 @@
         }
         
         .main-content5 {
-            width: 120%;
+            /* min-width: 120%;
             margin: 0 450px;
-            float: left;
+            float: left; */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            margin: 0 450px;
         }
         
         .main-content5 h1 {
@@ -524,13 +654,17 @@
         }
         
         .linha-1 {
-            width: 650px;
             border: 1px solid #9FB6CD;
-            border-radius: 50%;
+            width: 700px;
+            border-radius: 40%;
+            margin-left: 20%;
             display: flex;
-            margin-left: 24%;
         }
         
+        .dual-conteiner{
+            display: flex;
+            align-content: center;
+        }
         .dual {
             display: flex;
             flex-direction: row;
@@ -601,12 +735,12 @@
         /* Leia mais */
         
         .leia-mais {
-            margin: 25px;
+            margin: 0 auto;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            float: left;
-            margin-left: 45%;
+            align-content: center;
             margin-top: 15px;
             font-family: 14px "Segoe UI", system-ui, -apple-system, sans-serif;
             width: 10%;
@@ -725,390 +859,148 @@
         .footer-web ul li {
             flex: 1;
         }
-        /*notebooks*/
+
+        /* Mobile L*/
+@media (max-width: 800px) {
+
+    html,body{
+        overflow-x: hidden;
+    }
+    .navbar {
+        min-height: 4rem;
         
-        @media (min-width: 600px) and (max-width: 991px) {
-            .header-logo {
-                width: 100%;
-            }
-            .header-logo img {
-                width: 100%;
-            }
-            .header-content h1 {
-                font-size: 48px;
-            }
-            .header-content h3 {
-                font-size: 20px;
-            }
-            .header-logo img {
-                max-width: 200px;
-                max-height: 150px;
-                width: auto;
-                height: auto;
-            }
-            .novidades {
-                width: 25%;
-                height: 100%;
-                margin-left: 5%;
-                display: flex;
-                flex-direction: row;
-            }
-            .novidades h2,
-            .dev h2,
-            .dual h2 {
-                font-size: 22px;
-            }
-            .novidades p,
-            .dev p,
-            .dual p {
-                font-size: 16px;
-            }
-            .jogos h1 {
-                margin-left: 62%;
-                margin-top: -35%;
-                text-align: center;
-                font-size: 30px;
-            }
-            .requisitos-jogo h3 {
-                margin-left: 20%;
-                margin-top: -20%;
-                text-align: center;
-            }
-            .requisitos {
-                margin-left: 35%;
-            }
-            .download {
-                margin-top: 8%;
-                margin-left: 35%;
-            }
-            .download p,
-            .requisitos p {
-                font-size: 18px;
-            }
-            .main-content4 {
-                margin-left: 10%;
-            }
-            .main-content5 h1 {
-                margin-left: -100%;
-            }
-            .linha {
-                width: 100%;
-            }
-            .linha-1 {
-                width: 650px;
-                margin-left: 15%;
-            }
-            .redator h5 {
-                margin-left: 56px;
-            }
-            .dual {
-                width: 20%;
-                height: 100%;
-                display: flex;
-                margin-left: 19%;
-            }
-            .leia-mais,
-            .leia-mais1 {
-                width: 120px;
-                font-size: 12px;
-            }
-        }
-        /*tablets*/
-        
-        @media(min-width: 481px) and (max-width: 768px) {
-            .header-logo {
-                width: 100%;
-            }
-            .header-logo img {
-                width: 100%;
-            }
-            .header-content h1 {
-                font-size: 48px;
-            }
-            .header-content h3 {
-                font-size: 20px;
-            }
-            .header-logo img {
-                max-width: 200px;
-                max-height: 150px;
-                width: auto;
-                height: auto;
-            }
-            .novidades {
-                width: 25%;
-                height: 100%;
-                margin-left: 5%;
-                display: flex;
-                flex-direction: row;
-            }
-            .novidades h2,
-            .dev h2,
-            .dual h2 {
-                font-size: 22px;
-            }
-            .novidades p,
-            .dev p,
-            .dual p {
-                font-size: 16px;
-            }
-            .jogos h1 {
-                margin-left: 62%;
-                margin-top: 10%;
-                text-align: center;
-                font-size: 30px;
-            }
-            .requisitos-jogo h3 {
-                margin-left: 20%;
-                margin-top: -20%;
-                text-align: center;
-            }
-            .requisitos {
-                margin-left: 35%;
-            }
-            .download {
-                margin-top: 8%;
-                margin-left: 35%;
-            }
-            .download p,
-            .requisitos p {
-                font-size: 18px;
-            }
-            .main-content4 {
-                margin-left: 10%;
-            }
-            .main-content5 h1 {
-                margin-left: -100%;
-            }
-            .linha {
-                width: 100%;
-            }
-            .linha-1 {
-                width: 650px;
-                margin-left: 15%;
-            }
-            .redator h5 {
-                margin-left: 56px;
-            }
-            .dual {
-                width: 20%;
-                height: 100%;
-                display: flex;
-                margin-left: 19%;
-            }
-            .leia-mais,
-            .leia-mais1 {
-                width: 120px;
-                font-size: 12px;
-            }
-        }
-        /*smartphones*/
-        
-        @media (min-width: 0px) and (max-width: 480px) {
-            .header-logo {
-                width: 100%;
-            }
-            .header-logo img {
-                width: 100%;
-                /* @media (min-width: 360px) and (max-width: 640px) {*/
-            }
-            .header-content h1 {
-                font-size: 48px;
-            }
-            .header-content h3 {
-                font-size: 20px;
-            }
-            .header-logo img {
-                max-width: 200px;
-                max-height: 150px;
-                width: auto;
-                height: auto;
-            }
-            .comunidade img {
-                width: 100%;
-            }
-            .novidades {
-                width: 29%;
-                height: 100%;
-            }
-            .novidades h1,
-            p {
-                font-size: 100px;
-            }
-        }
-        /*tela maior*/
-        
-        @media(min-width: 1024px) and (max-width: 1366px) {
-            .header-logo {
-                width: 100%;
-            }
-            .header-logo img {
-                width: 100%;
-            }
-            .header-content h1 {
-                font-size: 48px;
-            }
-            .header-content h3 {
-                font-size: 20px;
-            }
-            .header-logo img {
-                max-width: 200px;
-                max-height: 150px;
-                width: auto;
-                height: auto;
-            }
-            .novidades {
-                width: 25%;
-                height: 100%;
-                margin-left: 5%;
-                display: flex;
-                flex-direction: row;
-            }
-            .novidades h2,
-            .dev h2,
-            .dual h2 {
-                font-size: 22px;
-            }
-            .novidades p,
-            .dev p,
-            .dual p {
-                font-size: 16px;
-            }
-            .jogos h1 {
-                margin-left: 62%;
-                margin-top: -35%;
-                text-align: center;
-                font-size: 30px;
-            }
-            .requisitos-jogo h3 {
-                margin-left: 20%;
-                margin-top: -19%;
-                text-align: center;
-            }
-            .requisitos {
-                margin: 0px 15px;
-                margin-left: -1%;
-            }
-            .download {
-                margin: 0px -30px;
-                margin-left: 4%;
-            }
-            .download p,
-            .requisitos p {
-                font-size: 18px;
-            }
-            .main-content4 {
-                margin-left: 10%;
-            }
-            .main-content5 h1 {
-                margin-left: -100%;
-            }
-            .linha {
-                width: 750px;
-                margin-right: 15%;
-            }
-            .linha-1 {
-                width: 750px;
-                margin-left: 15%;
-            }
-            .redator .dual {
-                width: 20%;
-                height: 100%;
-                display: flex;
-                margin-left: 19%;
-            }
-            .leia-mais,
-            .leia-mais1 {
-                width: 120px;
-                font-size: 16px;
-            }
-        }
-        /*tela maior2*/
-        
-        @media(min-width: 1440px) and (max-width: 1600px) {
-            .header-logo {
-                width: 100%;
-            }
-            .header-logo img {
-                width: 100%;
-            }
-            .header-content h1 {
-                font-size: 48px;
-            }
-            .header-content h3 {
-                font-size: 20px;
-            }
-            .header-logo img {
-                max-width: 200px;
-                max-height: 150px;
-                width: auto;
-                height: auto;
-            }
-            .novidades {
-                width: 25%;
-                height: 100%;
-                margin-left: 5%;
-                display: flex;
-                flex-direction: row;
-            }
-            .novidades h2,
-            .dev h2,
-            .dual h2 {
-                font-size: 22px;
-            }
-            .novidades p,
-            .dev p,
-            .dual p {
-                font-size: 16px;
-            }
-            .jogos h1 {
-                margin-left: 62%;
-                margin-top: -20%;
-                text-align: center;
-                font-size: 30px;
-            }
-            .requisitos-jogo h3 {
-                margin-top: 15%;
-                text-align: center;
-            }
-            .requisitos {
-                margin: 0px 15px;
-                margin-top: 5%;
-                margin-left: -1%;
-            }
-            .download {
-                margin: 0px -30px;
-                margin-top: 5%;
-                margin-left: 4%;
-            }
-            .download p,
-            .requisitos p {
-                font-size: 18px;
-            }
-            .main-content4 {
-                margin-left: 15%;
-            }
-            .main-content5 h1 {
-                margin-left: -100%;
-                margin: 10%;
-                margin-top: 50%;
-            }
-            .linha {
-                width: 750px;
-                margin-right: 15%;
-            }
-            .linha-1 {
-                width: 750px;
-                margin-left: 25%;
-            }
-            .dual {
-                width: 20%;
-                height: 100%;
-                display: flex;
-                margin-left: 19%;
-            }
-            .leia-mais,
-            .leia-mais1 {
-                width: 120px;
-                font-size: 16px;
-            }
-        }
+    }
+    .navbar .toggleIcon {
+        display: block;
+        position: absolute;
+        right: 1.5rem;
+        top: 3%;
+        transform: translate(50%, 50%);
+    }
+
+    .navbar .menu {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #fff;
+        position: absolute; 
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        transition: .3s;
+    }
+    .navbar .menu  li{
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .navbar .menu  li a {
+        flex: none;
+    }
+    .navbar .menu.open{
+        max-height: 100vh;
+        overflow: visible;
+    }
+    .navbar .logo {
+        align-self: flex-start;
+    }
+    .header {
+        min-height: auto;
+    }
+    .novidades-conteiner{
+        flex-direction: column;
+        align-items:center;
+        align-content:center;
+        justify-content: center;
+       
+    }
+    .novidades{
+        width: 350px;
+    }
+    
+    .jogos{
+        min-width: 100%;
+    }
+    .jogos h1 {
+        margin-left: 62%;
+        margin-top: -90%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .requisitos-jogo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+    }
+    
+    .requisitos-jogo h3{
+        margin-left: auto;
+        margin-right: auto;
+        width: 6em;
+        margin-left: 30%;
+        margin-top: -80%;
+        align-items: center;
+        text-align: center;
+    }
+    .requisitos {
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 20%;
+    }
+    .download {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8%;
+        margin-left: 20%;
+    }
+    .download p,
+    .requisitos p {
+        font-size: 18px;
+    }
+    .devs-conteiner{
+        flex-direction: column;
+        align-items:center;
+        align-content:center;
+        justify-content: center;
+    }
+    .dev{
+        width: 350px;
+    }
+    .main-content5{
+        margin: 0 60px;
+    }
+    .linha-1{
+          width: 60%;
+    }
+    .dual{
+        align-content: center;
+        width: 350px;
+    }
+    .header-content3{ 
+        min-height: auto;
+    }
+    .header-content3 h1{ 
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .redatores{ 
+        margin-left: 2%;
+    }
+
+    .transparencia{ 
+        width: 50%;
+        height: 330px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+}
