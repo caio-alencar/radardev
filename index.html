@@ -4,108 +4,117 @@
 <head>
     <meta charset="utf-8">
     <meta nome="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Radar Dev</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Radar Dev</title>
+    
 </head>
 
 <body>
-    <div class="container">
+    
+        <nav class="navbar">
+            <div class="logo">
+               <a href="index.html">
+                <img src="img/logoo.png" alt="Radar Dev">
+            </a>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="dev.html">Dev</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="sec.html">Segurança</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="toggleIcon" onclick="handleClickMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        
 
-        <header class="header">
-            <nav>
-                <div class="header-logo">
-                    <img src="img/logo.png" alt="logo" width="90%" height="90%">
-                </div>
-                <ul class="header-menu">
-                    <li><a href="#main-novidades">Novidades</a></li>
-                    <li><a href="#main-dev">Dev</a></li>
-                    <li><a href="#main-jogos">Jogos</a></li>
-                    <li><a href="#main-redes">Redes</a></li>
-                    <li><a href="#main-seguranca">Segurança</a></li>
-                </ul>
-            </nav>
-            <div class="header-content">
-                <h1>Somos a maior comunidade do Brasil!</h1>
-                <br>
-                <h3>Entre para a nossa família e fique por dentro de tudo sobre o universo Dev</h3>
-                <a href="#" class="comunidade">
-                    <p>inscreva-se</p>
+<div class="container">
+    <header class="header">
+        <div class="header-content">
+            <h1>Somos a maior comunidade do Brasil!</h1>
+            <br>
+            <h3>Entre para a nossa família e fique por dentro de tudo sobre o universo Dev</h3>
+            <a href="form.html" class="comunidade">
+                <p>inscreva-se</p>
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+    <section class="main-novidades" id="main-novidades">
+        <div class="main-content">
+            <h1>Novidades</h1>
+            <div class="linha"></div>
+            <p>Confira as principais notícias da semana. </p>
+        </div>
+
+
+        <div class="novidades-conteiner"> 
+            <div class="novidades">
+                <a href="not1.html" class="novidades-link">
+                    <div class="novidades-img">
+                        <img src="img/dev-02.jpg" width="100%" alt="dev-02">
+                    </div>
+
+                <h2>Metade dos desenvolvedores do Brasil não possuem ensino superior.</h2>
+
+                    <div class="redator">
+                        <img src="https://media.istockphoto.com/photos/smiling-man-playing-on-digital-tablet-picture-id509030928" alt="redator1" width="15%">
+                        <h4> Pedro Vieria</h4>
+                        <br>
+                        <h5> Set 20, 2020</h5>
+                    </div>
+                    <br>
+                    <p>Pesquisa inédita da Bain com o Google mostrou que 75% dos desenvolvedores estão há menos de cinco anos na área.</p>
                 </a>
             </div>
-        </header>
 
-        <main class="main">
-            <section class="main-novidades" id="main-novidades">
-                <div class="main-content">
-                    <h1>Novidades</h1>
-                    <div class="linha"></div>
-                    <p>Confira as principais notícias da semana. </p>
-                </div>
-
-                <div class="grid-novidades">
-                    <div class="novidades-conteiner">
-                        <div class="novidades">
-                            <a href="#" class="novidades-link">
-                                <div class="novidades-img">
-                                    <img src="img/dev-02.jpg" width="100%" alt="dev-02">
-                                </div>
-
-                                <h2>Metade dos desenvolvedores do Brasil não possuem ensino superior.</h2>
-
-                                <div class="redator">
-                                    <img src="https://media.istockphoto.com/photos/smiling-man-playing-on-digital-tablet-picture-id509030928" alt="redator1" width="15%">
-                                    <h4> Pedro Vieria</h4>
-                                    <br>
-                                    <h5> Set 20, 2020</h5>
-                                </div>
-                                <br>
-                                <p>Pesquisa inédita da Bain com o Google mostrou que 75% dos desenvolvedores estão há menos de cinco anos na área.</p>
-                            </a>
-                        </div>
-
-                        <div class="novidades">
-                            <a href="#" class="novidades-link">
-                                <div class="novidades-img">
-                                    <img src="https://www.revistaadnormas.com.br/uploads/2018/10/botnet1.jpg" width="100%" alt="dev-01">
-                                </div>
-                                <h2>A influência das redes de computadores robotizados na opinião pública</h2>
-
-                                <div class="redator">
-                                    <img src="https://image.freepik.com/fotos-gratis/homem-trabalhando-computador_53876-87309.jpg" alt="redator1" width="15%">
-                                    <h4> Marcos Sousa</h4>
-                                    <br>
-                                    <h5> Set 05, 2020</h5>
-                                </div>
-                                <br>
-                                <p>Na eleição de 2018 o que ficou claro foi que a internet teve um papel fundamental e decisiva, e a ação de contas individuais e automatizadas no debate público nas redes sociais foi uma realidade.</p>
-                            </a>
-                        </div>
-                        <div class="novidades">
-                            <a href="#" class="novidades-link">
-                                <div class="novidades-img">
-                                    <img src="https://www.eclicktecnologia.com.br/wp-content/uploads/2020/01/20190822124643_1200_675_-_seguranca__cibercrime__crime.jpg" width="100%" alt="dev-01">
-                                </div>
-                                <h2>Microsoft revela que ataques exploraram falha grave no Windows </h2>
-
-                                <div class="redator">
-                                    <img src="https://img.freepik.com/fotos-gratis/feliz-macho-escrita-positivo-correio-para-cliente_1163-3986.jpg?size=626&ext=jpg " alt="redator1 " width="15%">
-                                    <h4> Igor Lucas</h4>
-                                    <br>
-                                    <h5> Ago 28, 2020</h5>
-                                </div>
-                                <br>
-                                <p>Considerado 'severamente crítico', bug denominado Zerologon permitia agentes maliciosos invadirem redes de computadores; empresa diz que atualização do Windows Server pode resolver a vulnerabilidade</p>
-                            </a>
-                        </div>
-
-                        <a href="#" class="leia-mais">
-                            <p>Ler mais</p>
-                        </a>
+            <div class="novidades">
+                <a href="#" class="novidades-link">
+                    <div class="novidades-img">
+                        <img src="https://www.revistaadnormas.com.br/uploads/2018/10/botnet1.jpg" width="100%" alt="dev-01">
                     </div>
-                </div>
-    </div>
-    </div>
+                    <h2>A influência das redes de computadores robotizados na opinião pública</h2>
+
+                    <div class="redator">
+                        <img src="https://image.freepik.com/fotos-gratis/homem-trabalhando-computador_53876-87309.jpg" alt="redator1" width="15%">
+                        <h4> Marcos Sousa</h4>
+                        <br>
+                        <h5> Set 05, 2020</h5>
+                    </div>
+                    <br>
+                    <p>Na eleição de 2018 o que ficou claro foi que a internet teve um papel fundamental e decisiva, e a ação de contas individuais e automatizadas no debate público nas redes sociais foi uma realidade.</p>
+                </a>
+            </div>
+            <div class="novidades">
+                <a href="#" class="novidades-link">
+                    <div class="novidades-img">
+                        <img src="https://www.eclicktecnologia.com.br/wp-content/uploads/2020/01/20190822124643_1200_675_-_seguranca__cibercrime__crime.jpg" width="100%" alt="dev-01">
+                    </div>
+                    <h2>Microsoft revela que ataques exploraram falha grave no Windows </h2>
+
+                    <div class="redator">
+                        <img src="https://img.freepik.com/fotos-gratis/feliz-macho-escrita-positivo-correio-para-cliente_1163-3986.jpg?size=626&ext=jpg " alt="redator1 " width="15%">
+                        <h4> Igor Lucas</h4>
+                        <br>
+                        <h5> Ago 28, 2020</h5>
+                    </div>
+                    <br>
+                    <p>Considerado 'severamente crítico', bug denominado Zerologon permitia agentes maliciosos invadirem redes de computadores; empresa diz que atualização do Windows Server pode resolver a vulnerabilidade</p>
+                </a>
+            </div>
+
+            <a href="novidades.html" class="leia-mais">
+                <p>Ler mais</p>
+            </a>
+        </div>
     </section>
 
     <section class="main-jogos" id="main-jogos">
@@ -120,23 +129,19 @@
         <div class="jogos">
             <object width="60%" height="100%" data="https://www.youtube.com/embed/e_E9W2vsRbQ"></object>
             <h1> Assista o novo trailer de Valorant</h1>
-            <br>
+    
             <div class="requisitos-jogo">
-
                 <h3> Confira se Valorant roda no seu PC!</h3>
                 <br>
                 <a href="#" class="requisitos">
                     <p>requisitos</p>
                 </a>
-                <a href="#" class="download">
+                <a href="https://playvalorant.com/en-gb/" class="download">
                     <p>Download</p>
                 </a>
             </div>
-
         </div>
     </section>
-
-
 
     <section class="main-dev" id="main-dev">
         <div class="main-content3">
@@ -147,15 +152,12 @@
 
         <div class="grid-devs">
             <div class="devs-conteiner">
-
                 <div class="dev">
                     <a href="#" class="dev-link">
                         <div class="dev-img">
                             <img src="img/dev-01.png" width="100%" alt="dev-01">
                         </div>
-                        <br>
-                        <br>
-                        <br>
+                       
                         <h2>A segunda geração de frameworks e bibliotecas JavaScript: para além do Angular, React e Vue!</h2>
 
                         <div class="redator">
@@ -170,7 +172,7 @@
                 </div>
 
                 <div class="dev">
-                    <a href="#" class="dev-link">
+                    <a href="not1.html" class="dev-link">
                         <div class="dev-img">
                             <img src="img/dev-02.jpg" width="100%" alt="dev-02">
                         </div>
@@ -204,7 +206,6 @@
                         <p>Demanda por profissionais de tecnologia deve crescer no Brasil nos próximos anos. Saber programar, principalmente na linguagem Python, será um diferencial</p>
                     </a>
                 </div>
-
             </div>
         </div>
         <div class="grind-dev2">
@@ -263,7 +264,7 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="leia-mais">
+            <a href="dev.html" class="leia-mais">
                 <p>Ler mais</p>
             </a>
         </div>
@@ -277,10 +278,9 @@
             </div>
         </div>
         <div class="linha-1"></div>
-        <br>
+
         <div class="grid-dual">
             <div class="dual-conteiner">
-
 
                 <div class="dual">
                     <a href="#" class="dual-link">
@@ -317,7 +317,7 @@
                     <p>Código-fonte do sistema operacional foi exposto na internet, permitindo a revelação de alguns segredos do sistema</p>
                 </a>
             </div>
-</div>
+        </div>
 
 <div class="dual-conteiner">
             <div class="dual">
@@ -396,11 +396,11 @@
         </div>
 
 
-            <a href="#" class="leia-mais1">
+            <a href="redes.html" class="leia-mais1">
                 <p>Ler mais</p>
             </a>
 
-            <a href="#" class="leia-mais2">
+            <a href="sec.html" class="leia-mais2">
                 <p>Ler mais</p>
             </a>
 
@@ -408,6 +408,7 @@
     </section>
 
     </main>
+
 
 
     <footer class="footer">
@@ -424,7 +425,10 @@
             </ul>
         </div>
     </footer>
+</div>
 
+
+<script src="css/script.js"></script>
 </body>
 
 </html>
